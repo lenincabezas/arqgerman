@@ -1,0 +1,5146 @@
+/*
+Theme Name: Photography Business
+Theme URI: http://www.zidithemes.com/photography-business
+Requires at least: 4.7
+Tested up to: 5.5
+Requires PHP: 5.2.4
+Author: zidithemes
+Author URI: https://zidithemes.com/author
+Description: Photography Business is a photography and portfolio theme with  grid and modern design. It is a free theme with a responsive portfolio design. Photography Business is perfect for your personal blog, portfolio, travel, photography, magazine , style, news , business , fashion , fitness , shop , education , health ,  ecommerce or any content-focused website. It is a simple news and magazine with portfolio design and multi-purpose theme compatible with elementor , divi , gutenberg page builder and woocommerce, seo, translation and RTL ready.
+Version: 0.0.09
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:  one-column, two-columns, three-columns, right-sidebar, footer-widgets,  custom-colors, custom-menu, theme-options, editor-style, block-styles, buddypress, photography, News, education, grid-layout, featured-images, full-width-template, threaded-comments, translation-ready
+Text Domain: photography-business
+*/
+
+
+
+/* BEGIN GLOBAL STYLE */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+} 
+
+::selection {
+    color: #fff;
+    background: #353535;
+    background: blue;
+}
+        
+body {
+    background: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}      
+
+a {
+	text-decoration: none;
+} 
+
+li {
+    list-style: none;
+} 
+
+img {
+    max-width: 100%;
+}
+
+audio {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+        
+.flowid {
+    float: left;
+    width: 100%;
+}  
+        
+.mg-auto { margin: 0px auto; }
+.mg-left-15 { margin-left: 15px; }
+              
+.dsply-fl { display: flex; } 
+        
+.dsply-ib { display: inline-block; } 
+
+.fl-wrap { flex-wrap: wrap; }                 
+        
+.wid-100 { width: 100%; }
+.wid-99 { width: 99%; }
+.wid-97 { width: 97%; }
+.wid-90 { width: 90%; }
+.wid-80 { width: 80%; }
+.wid-75 { width: 75%; }
+.wid-70-5 { width: 70.5%; }
+.wid-70 { width: 70%; }
+.wid-60 { width: 60%; }
+.wid-50 { width: 50%; }
+.wid-49 { width: 49%; }
+.wid-48 { width: 48%; }
+.wid-47 { width: 47%; }
+.wid-46 { width: 46%; }
+.wid-33 { width: 33.3%; }
+.wid-32 { width: 32.3%; }
+.wid-30 { width: 30%; }
+.wid-29 { width: 29%; }
+.wid-25 { width: 25%; }
+.wid-24 { width: 24%; }
+.wid-20 { width: 20%; }
+  
+
+.wid-65 { width: 65%; }
+.wid-35 { width: 35%; }
+.wid-34 { width: 34%; } 
+        
+.relative { position: relative;}
+ 
+        
+.text-center { text-align: center; }
+.jc-sp-btw  { justify-content: space-between; }
+.jc-sp-ard { justify-content: space-around; }
+.jc-center { justify-content: center; }
+.ai-center { align-items: center; }
+
+.bx-sz-bb { box-sizing: border-box; }
+
+.mg-tp { margin: 45px 0px 0px 0px; }
+.mg-rt-20 { margin-right: 10px; }
+.mg-bt-30 { margin-bottom: 30px; }
+.mg-bt-20 { margin-bottom: 20px; }
+.mg-bt-10 { margin-bottom: 10px; }
+
+.pd-td-60 { padding: 60px 0px; }
+.pd-td-50 { padding: 50px 0px; }
+
+.pd-rl-40 { padding: 0px 40px; }
+
+.fnt-dsp {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn-meta {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #353535;
+}
+
+/* END GLOBAL STYLE   */
+
+
+
+/* BEGIN WordPress STYLE   */
+.wp-caption {
+    
+}
+
+.wp-caption-text {
+    
+}
+
+.sticky {
+    
+}
+
+.gallery-caption {
+    
+}
+
+.screen-reader-text {
+    margin: 0px;
+}
+
+.bypostauthor {
+    
+}
+
+.alignright {
+    
+}
+
+.alignleft {
+    
+}
+
+.aligncenter {
+    margin: 10px auto;
+    display: block;
+}
+
+.wp-video {
+    margin: 0px auto 20px;
+}
+
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  right: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+
+
+/* WordPress BLOCK IMAGE */
+.wp-block-image {
+    width: 60%;
+    margin: 44px auto;
+}
+/* END WordPress BLOCK IMAGE */
+
+
+
+/* END WordPress STYLE   */
+
+.header-box {
+    display: none;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px 0px 15px;
+}
+
+.header-box .header-box-flex {
+    display: flex;
+    align-items: center;
+}
+
+.header-box .logo {}
+.header-box .logo .logo-text-link {
+    color: #353535;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.header-box .logo .logo-img-link {
+    
+}
+
+.header-box .logo .logo-img-link .logo-img {
+    width: 90%;
+    height: 90px;
+    display: block;
+}
+
+.header-box .ad-box-img {
+    display: none;
+}
+.header-box .ad-box-img .ad-img {
+    height: 120px;
+    width: 100%;
+}
+
+.header-box .ad-box-img .ad-ex {
+    background: #949494;
+    height: 90px;
+    width: 100%;
+}
+
+.header-box .ad-box-img .ad-ex a{
+    color: #000;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.site-info-desc{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+
+
+/* BEGIN NAVIGATION MENU */     
+
+.nav-outer {
+    background: #fff;
+    z-index: 20;
+    border-bottom: 1px solid #e2e4e7;
+    margin-bottom: 10px;
+}
+
+.nav {
+    position: relative;
+    
+}
+
+.theme-nav {
+    background: #fff;
+    width: 100%;
+    transition: .4s;
+    box-sizing: border-box;
+}
+
+
+.theme-nav ul li {
+    list-style: none;
+}
+
+                
+.theme-nav ul li a{
+    text-decoration: none;
+    color: #353535;
+    line-height: 50px;
+    transition: 0.2s linear;
+}
+        
+.theme-nav ul li a:hover {
+    color: #1e67c1;
+}
+        
+.theme-nav .logo {
+    float: left;
+}        
+.theme-nav .logo  li{}        
+.theme-nav .logo  li a{
+    box-sizing: border-box;
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+} 
+
+
+.theme-nav .nav-wrap {
+    float: right;
+    position: relative;
+    display: inline;
+    
+}        
+.theme-nav .nav-wrap  li{
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px;
+    z-index: 50;
+}       
+       
+.theme-nav .nav-wrap  li a{
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin: 0px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    font-weight: 700;
+}         
+  
+.theme-nav .nav-wrap li ul{
+    width: 200px;
+    display: none;
+    top: 49px;
+    position: absolute;
+    left: 0px;
+    //visibility: hidden;
+}
+
+.theme-nav .nav-wrap li ul li{
+    background: #353535;
+    display: block;
+}
+        
+.theme-nav .nav-wrap li ul li a {
+    display: block;
+    padding: 3px 25px;
+}
+
+
+.theme-nav .nav-wrap li ul li a:hover {
+    color: #d54150;
+}
+
+.theme-nav .nav-wrap li ul li:hover{
+    
+}
+
+.theme-nav .nav-wrap li.focus  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .nav-wrap li:focus-within  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .nav-wrap li:hover  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .nav-wrap ul ul li{
+    display: none;
+}
+
+.theme-nav .nav-wrap ul li.focus li{
+    display: block;
+}
+
+.theme-nav .nav-wrap ul li:focus-within li{
+    display: block;
+}
+
+.theme-nav .nav-wrap ul li:hover li{
+    display: block;
+}
+
+.theme-nav .nav-wrap ul ul {
+    left: 0%;
+    top: 48px;
+}
+
+        
+.theme-nav .menu {
+    float: right;
+    position: relative;
+    display: inline;
+    
+}        
+.theme-nav .menu  li{
+    display: inline-block;
+    position: relative;
+    padding: 0px 5px;
+    z-index: 50;
+}       
+       
+.theme-nav .menu  li a{
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin: 0px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    font-weight: 700;
+}         
+  
+.theme-nav .menu li ul{
+    width: 200px;
+    display: none;
+    top: 49px;
+    position: absolute;
+    left: 0px;
+    //visibility: hidden;
+}
+
+.theme-nav .menu li ul li{
+    background: #fff;
+    display: block;
+}
+        
+.theme-nav .menu li ul li a {
+    display: block;
+    padding: 3px 25px;
+}
+
+
+.theme-nav .menu li ul li a:hover {
+    color: #1e67c1;
+}
+
+.theme-nav .menu li ul li:hover{
+    
+}
+
+.theme-nav .menu li.focus  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .menu li:focus-within  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .menu li:hover  ul {
+    display: block;
+    opacity: 1;
+}
+
+.theme-nav .menu ul ul li{
+    display: none;
+}
+
+.theme-nav .menu ul li.focus li{
+    display: block;
+}
+
+.theme-nav .menu ul li:focus-within li{
+    display: block;
+}
+
+.theme-nav .menu ul li:hover li{
+    display: block;
+}
+
+.theme-nav .menu ul ul {
+    left: 100%;
+    top: 0%;
+}
+
+
+#site-navigation {}
+
+        
+.navcheck {
+    position: fixed;
+    top: 0em;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.panbtn {
+    display: none;
+}           
+                
+.site-nav-title {
+    
+}
+        
+.site-mob-title {
+    display: none;
+    overflow: hidden;
+    transform: scale(0);
+    transition: .4s;
+}        
+
+
+
+/* END NAVIGATION STYLE */
+
+
+/* BEGIN PORTFILIO TEMPLATES STYLE */
+
+.mg-auto { margin: 0px auto; }
+
+.mg-bt-30 { margin-bottom: 30px; }
+.mg-bt-10 { margin-bottom: 10px; }
+
+.mg-rt-10 { margin-right: 10px; }
+
+.dsply-fl  { display: flex; }
+.fl-wrap { flex-wrap: wrap; } 
+.dsply-ib  { display: inline-block; } 
+.ai-center { align-items: center; } 
+.jc-center { justify-content: center; }
+.jc-sp-btw { justify-content: space-between; }
+
+
+.wid-90 { width: 90%; }
+.wid-50 { width: 50%; }
+.wid-49 { width: 49%; }
+.wid-32 { width: 32.3%; }
+
+.relative { position: relative; }
+        
+
+
+/* BEGIN INDEX STYLE   */
+
+    
+.photography-business-index {}   
+
+.photography-business-index a:hover {
+    color: #1e67c1 !important;
+}   
+
+.photography-business-index .blog-2-col-inner .mg-tp{
+    margin: 20px 0px 10px 0px;
+    justify-content: space-between;
+} 
+
+.photography-business-index .blog-2-col-inner .items{
+    background: #fff;
+    margin: 0px 0px 60px 0px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #a5a5a5;
+} 
+
+
+.photography-business-index .blog-2-col-inner .items:nth-child(3n+0) .items-inner{
+    //margin-right: 0px;
+} 
+
+.photography-business-index .blog-2-col-inner .items  .items-inner{
+    transition: .5s;
+    z-index: 3;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
+}
+
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner{
+    //transform: scale(1.03);
+}
+          
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box {
+    
+    transition: .5s;
+    z-index: 1;
+}
+
+.photography-business-index .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link {
+    color: #fff;
+    font-weight: 900;
+}
+
+.photography-business-index .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items{
+    background: #a6a6a6;
+    width: 91%;
+    margin: 0px auto;
+    height: 427px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+ 
+.photography-business-index .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items .user-no-img-items-inner{}
+
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner .img-box {
+    //transform: scale(1.1);
+    
+}        
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .img-wrap {
+
+}   
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 610px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+} 
+        
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner .img-box .img-wrap img{
+    
+}     
+
+     
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .category{
+    position: absolute;
+    top: 210px;
+    right: 0%;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #353535;
+    transform: skew(0deg);
+    margin-right: 20px;
+    transition: .3s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 3;
+}      
+     
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .category a{ color: #fff; }
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box {
+    z-index: 3;
+    color: #1f1e1e;
+    //height: 100%;
+}
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case {}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case a {
+    background: #ffffff;
+    padding: 12px 25px 11px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #424242;
+    font-size: 12px;
+    border: 1px solid #b9b9b9;
+    font-weight: 600;
+    margin: 14px 0px 10px 0
+}
+        
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+        
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2{ font-size: 30px; }
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner 
+.img-box .details-box .details-box-inner .read-more{ 
+    background: #353535;
+    padding: 12px 15px 11px;
+    border-radius: 26px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    //display: inline-block;
+    display: none;
+    margin: 14px 0px 0px 0px;
+}
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2 a{ color: #1f1e1e; }
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .title-header {
+    color: #353535;
+    padding: 40px 15px;
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .title-header h2 a { color: #353535; }
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index .blog-2-col-inner .items .items-inner .img-box  .title-header .persona-meta .comments {}
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box 
+.details-box .details-box-inner h3{ 
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    margin: 10px 0px;
+} 
+
+
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header {
+    display: none;
+}
+
+        
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .overlay-bg-hover{
+    position: absolute;
+    background: #757575;
+    left: 0%;
+    right: 0%;
+    bottom: 1%;
+    transition: all .3s, height .3s .3s, left .2s , width .2s, bottom .3s, top .3s;
+    height: 40px;
+    width: 1%;
+}
+        
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.4;
+}  
+ 
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ 
+.photography-business-index .blog-2-col-inner .items  .items-inner .img-box .overlay-bg{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2b2b2b;
+    top: 0%;
+    opacity: 0.39;
+}  
+
+ 
+.photography-business-index .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}      
+/* END INDEX STYLE   */
+
+
+
+/* BEGIN INDEX FIFTEEN STYLE   */
+
+    
+.photography-business-index-fifteen {}   
+
+.photography-business-index-fifteen a:hover {
+    color: #4183d5 !important;
+}   
+
+.photography-business-index-fifteen .blog-2-col-inner .mg-tp{
+    margin: 20px 0px 10px 0px;
+    justify-content: space-between;
+} 
+
+.photography-business-index-fifteen .blog-2-col-inner .items{
+    background: #fff;
+    margin: 0px 0px 60px 0px;
+    width: 100%;
+    border-radius: 8px;
+} 
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items:nth-child(3n+0) .items-inner{
+    //margin-right: 0px;
+} 
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner{
+    transition: .5s;
+    z-index: 3;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner{
+    //transform: scale(1.03);
+}
+          
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box {
+    
+    transition: .5s;
+    z-index: 1;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link {
+    color: #fff;
+    font-weight: 900;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items{
+    background: #a6a6a6;
+    width: 91%;
+    margin: 0px auto;
+    height: 427px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+ 
+.photography-business-index-fifteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items .user-no-img-items-inner{}
+
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner .img-box {
+    //transform: scale(1.1);
+    
+}        
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .img-wrap {
+
+}   
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 610px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+        
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner .img-box .img-wrap img{
+    
+}     
+
+     
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .category{
+    position: absolute;
+    top: 210px;
+    right: 0%;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #353535;
+    transform: skew(0deg);
+    margin-right: 20px;
+    transition: .3s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 3;
+}      
+     
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .category a{ color: #fff; }
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box {
+    z-index: 3;
+    color: #1f1e1e;
+    //height: 100%;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case {  }
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case a {
+    background: #ffffff;
+    padding: 12px 25px 11px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #424242;
+    font-size: 12px;
+    border: 1px solid #b9b9b9;
+    font-weight: 600;
+    margin: 14px 0px 10px 0
+}
+        
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+        
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner 
+.img-box .details-box .details-box-inner .read-more{ 
+    background: #353535;
+    padding: 12px 15px 11px;
+    border-radius: 26px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    //display: inline-block;
+    display: none;
+    margin: 14px 0px 0px 0px;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2 a{ color: #1f1e1e; }
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .title-header {
+    color: #353535;
+    padding: 40px 15px;
+    display: none;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 a { color: #353535; }
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items .items-inner .img-box  .title-header .persona-meta .comments {}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box 
+.details-box .details-box-inner h3{ 
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    margin: 10px 0px;
+    display: none;
+} 
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header {
+    display: block;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 a { color: #353535; }
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments {}
+
+
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+    /* END PHOTOGRAPHY BUSINESS INDEX TITLE HEADER */
+
+        
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg-hover{
+    position: absolute;
+    background: #757575;
+    left: 0%;
+    right: 0%;
+    bottom: 1%;
+    transition: all .3s, height .3s .3s, left .2s , width .2s, bottom .3s, top .3s;
+    height: 40px;
+    width: 1%;
+}
+        
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.4;
+}  
+ 
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ 
+.photography-business-index-fifteen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2b2b2b;
+    top: 0%;
+    opacity: 0.39;
+}  
+
+ 
+.photography-business-index-fifteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}      
+/* END INDEX FIFTEEN STYLE   */
+
+
+
+/* BEGIN INDEX SIXTEEN STYLE   */
+
+    
+.photography-business-index-sixteen {}   
+
+.photography-business-index-sixteen a:hover {
+    color: #4183d5 !important;
+}   
+
+.photography-business-index-sixteen .sidebar {
+    display: none;
+} 
+
+.photography-business-index-sixteen .blog-2-col-inner {
+    width: 100% !important;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .mg-tp{
+    margin: 20px 0px 10px 0px;
+    justify-content: space-between;
+} 
+
+.photography-business-index-sixteen .blog-2-col-inner .items{
+    background: #fff;
+    margin: 0px 0px 60px 0px;
+    width: 49%;
+    border-radius: 8px;
+} 
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items:nth-child(3n+0) .items-inner{
+    //margin-right: 0px;
+} 
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner{
+    transition: .5s;
+    z-index: 3;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner{
+    //transform: scale(1.03);
+}
+          
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box {
+    
+    transition: .5s;
+    z-index: 1;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link {
+    color: #fff;
+    font-weight: 900;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items{
+    background: #a6a6a6;
+    width: 91%;
+    margin: 0px auto;
+    height: 427px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+ 
+.photography-business-index-sixteen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items .user-no-img-items-inner{}
+
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner .img-box {
+    //transform: scale(1.1);
+    
+}        
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .img-wrap {
+
+}   
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+    display: block;
+    width: 100%;
+    height: 369px;
+    max-height: 370px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+        
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner .img-box .img-wrap img{
+    
+}     
+
+     
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .category{
+    position: absolute;
+    top: 210px;
+    right: 0%;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #353535;
+    transform: skew(0deg);
+    margin-right: 20px;
+    transition: .3s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 3;
+}      
+     
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .category a{ color: #fff; }
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box {
+    z-index: 3;
+    color: #1f1e1e;
+    //height: 100%;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case {  }
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case a {
+    background: #ffffff;
+    padding: 12px 25px 11px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #424242;
+    font-size: 12px;
+    border: 1px solid #b9b9b9;
+    font-weight: 600;
+    margin: 14px 0px 10px 0
+}
+        
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+        
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner 
+.img-box .details-box .details-box-inner .read-more{ 
+    background: #353535;
+    padding: 12px 15px 11px;
+    border-radius: 26px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    //display: inline-block;
+    display: none;
+    margin: 14px 0px 0px 0px;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2 a{ color: #1f1e1e; }
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .title-header {
+    color: #353535;
+    padding: 40px 15px;
+    display: none;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 a { color: #353535; }
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items .items-inner .img-box  .title-header .persona-meta .comments {}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box 
+.details-box .details-box-inner h3{ 
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    margin: 10px 0px;
+    display: none;
+} 
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header {
+    display: block;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 a { color: #353535; }
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments {}
+
+
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+    /* END PHOTOGRAPHY BUSINESS INDEX TITLE HEADER */
+
+        
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg-hover{
+    position: absolute;
+    background: #757575;
+    left: 0%;
+    right: 0%;
+    bottom: 1%;
+    transition: all .3s, height .3s .3s, left .2s , width .2s, bottom .3s, top .3s;
+    height: 40px;
+    width: 1%;
+}
+        
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.4;
+}  
+ 
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ 
+.photography-business-index-sixteen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2b2b2b;
+    top: 0%;
+    opacity: 0.39;
+}  
+
+ 
+.photography-business-index-sixteen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}      
+
+
+/* END INDEX SIXTEEN STYLE   */
+
+
+
+/* BEGIN INDEX SEVENTEEN STYLE   */
+
+    
+.photography-business-index-seventeen {}   
+
+.photography-business-index-seventeen a:hover {
+    color: #4183d5 !important;
+}   
+
+.photography-business-index-seventeen .sidebar {
+    display: none;
+} 
+
+.photography-business-index-seventeen .blog-2-col-inner {
+    width: 100% !important;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .mg-tp{
+    margin: 20px 0px 10px 0px;
+    justify-content: space-between;
+} 
+
+.photography-business-index-seventeen .blog-2-col-inner .items{
+    background: #fff;
+    margin: 0px 0px 60px 0px;
+    width: 32%;
+    border-radius: 8px;
+} 
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items:nth-child(3n+0) .items-inner{
+    //margin-right: 0px;
+} 
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner{
+    transition: .5s;
+    z-index: 3;
+    //margin-right: 20px;
+    //margin-bottom: 20px;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner{
+    //transform: scale(1.03);
+}
+          
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box {
+    
+    transition: .5s;
+    z-index: 1;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link {
+    color: #fff;
+    font-weight: 900;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items{
+    background: #a6a6a6;
+    width: 91%;
+    margin: 0px auto;
+    height: 427px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+ 
+.photography-business-index-seventeen .blog-2-col-inner .items .items-inner .img-box .img-wrap .user-no-img-link .user-no-img-items .user-no-img-items-inner{}
+
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner .img-box {
+    //transform: scale(1.1);
+    
+}        
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .img-wrap {
+
+}   
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+    display: block;
+    width: auto;
+    margin: 0px auto;
+    height: 245px;
+    max-height: 250px;
+    max-width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+        
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner .img-box .img-wrap img{
+    
+}     
+
+     
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .category{
+    position: absolute;
+    top: 210px;
+    right: 0%;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #353535;
+    transform: skew(0deg);
+    margin-right: 20px;
+    transition: .3s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 3;
+}      
+     
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .category a{ color: #fff; }
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box {
+    z-index: 3;
+    color: #1f1e1e;
+    //height: 100%;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case {  }
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case a {
+    background: #ffffff;
+    padding: 12px 25px 11px;
+    border-radius: 75px;
+    box-sizing: border-box;
+    color: #424242;
+    font-size: 12px;
+    border: 1px solid #b9b9b9;
+    font-weight: 600;
+    margin: 14px 0px 10px 0
+}
+        
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner {
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+        
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2{
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner 
+.img-box .details-box .details-box-inner .read-more{ 
+    background: #353535;
+    padding: 12px 15px 11px;
+    border-radius: 26px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    //display: inline-block;
+    display: none;
+    margin: 14px 0px 0px 0px;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner h2 a{ color: #1f1e1e; }
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .title-header {
+    color: #353535;
+    padding: 40px 15px;
+    display: none;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .title-header h2 a { color: #353535; }
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items .items-inner .img-box  .title-header .persona-meta .comments {}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box 
+.details-box .details-box-inner h3{ 
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    margin: 10px 0px;
+    display: none;
+} 
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header {
+    display: block;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 {
+    margin-bottom: 10px;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header h2 a { color: #353535; }
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta { 
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    color: #353535;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0%;
+    width: 100%;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .details-box .details-box-inner .bb-index-six-title-header .persona-meta a { 
+    color: #585858;
+    font-weight: 400;
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .date { 
+    color: #585858;
+    font-weight: 400; 
+}
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author {
+    font-weight: 400;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .author a {
+    color: #585858;
+    font-weight: 400;
+}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments {}
+
+
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box  .details-box .details-box-inner .bb-index-six-title-header .persona-meta .comments a{ 
+    color: #585858;
+    font-weight: 400; 
+}
+
+    /* END PORTFOLIO MAGAZINE PRO INDEX TITLE HEADER */
+
+        
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg-hover{
+    position: absolute;
+    background: #757575;
+    left: 0%;
+    right: 0%;
+    bottom: 1%;
+    transition: all .3s, height .3s .3s, left .2s , width .2s, bottom .3s, top .3s;
+    height: 40px;
+    width: 1%;
+}
+        
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    opacity: 0.4;
+}  
+ 
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg-hover a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ 
+.photography-business-index-seventeen .blog-2-col-inner .items  .items-inner .img-box .overlay-bg{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2b2b2b;
+    top: 0%;
+    opacity: 0.39;
+}  
+
+ 
+.photography-business-index-seventeen .blog-2-col-inner .items:hover  .items-inner .img-box .overlay-bg a{     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}      
+
+
+/* END INDEX SEVENTEEN STYLE   */
+
+
+
+
+/* BEGIN SINGLE STYLE */
+.photography-business-single {}
+
+.photography-business-single .inner {}
+
+.photography-business-single .inner .blog-2-col-inner {}
+
+.photography-business-single .inner .blog-2-col-inner .items {
+    margin-top: 20px;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner {
+    border-radius: 8px;
+    padding-top: 0px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+}
+
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .tags{
+    margin-bottom: 25px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .tags a{
+    color: #353535;
+    /* background: #9c9c9c; */
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img{
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img a{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img a img{
+    
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img .user-no-img-items{
+    background: #a6a6a6;
+    width: 100%;
+    margin: 0px auto;
+    height: 427px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img .user-no-img-items .user-no-img-items-inner{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .featured-img .user-no-img-items .user-no-img-items-inner div{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box img{
+    width: 80%;
+    display: block;
+    max-height: 610px;
+    margin: 30px auto 30px;
+    height: auto;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box img:nth-child(1){
+    width: 100%;
+    display: block;
+    margin: 0px auto 30px;
+    height: auto;
+    max-height: 600px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .category{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .title{
+    text-align: center;
+    font-size: 35px;
+    line-height: 46px;
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 1px;
+    color: #353535;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner {
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner figure{
+    width: 100%;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .meta-btn {
+    background: linear-gradient(#efefef 0%,#ffffff 100%);
+    padding: 5px 15px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,.4);
+    border-radius: 4px;
+    color: #2f2d2d;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .meta-btn a{
+    color: #2f2d2d;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner a { color: #353535; }
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .category{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular {
+
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .date{
+    
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .author{
+    
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .author a{
+    color: #353535;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .author a:hover {
+    color: #1e67c1 !important;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .comments{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .comments a{}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .singular .comments a:hover {
+    color: #1e67c1 !important;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+
+.photography-business-single .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p img{
+    display: block;
+    max-height: 610px;
+    margin: 0px auto 15px;    
+}
+
+
+/* END SINGLE STYLE */
+
+
+/* BEGIN SINGLE FULL WIDTH */
+.photography-business-single-full-width-title {}
+.photography-business-single-full-width-title .items-guten{}
+.photography-business-single-full-width-title .items-guten .items-inner{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .title-header{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .title-header .title{
+    font-size: 70px;
+}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .title-header .title-content{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .title-header .title-content a{
+    color: #353535;
+}
+
+
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .details-box{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .details-box .details-box-inner{}
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-single-full-width-title .items-guten .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+/* END SINGLE FULL WIDTH */
+
+
+/* BEGIN SINGLE NO SIDEBAR */
+.photography-business-single-no-sidebar {}
+.photography-business-single-no-sidebar .items{}
+.photography-business-single-no-sidebar .items .items-inner{}
+.photography-business-single-no-sidebar .items .items-inner .img-box{}
+.photography-business-single-no-sidebar .items .items-inner .img-box .title-header{}
+.photography-business-single-no-sidebar .items .items-inner .img-box .title-header .title{
+    font-size: 70px;
+}
+.photography-business-single-no-sidebar .items .items-inner .img-box .title-header .title-content{}
+.photography-business-single-no-sidebar .items .items-inner .img-box .title-header .title-content a{
+    color: #353535;
+}
+
+
+.photography-business-single-no-sidebar .items .items-inner .img-box .details-box{}
+.photography-business-single-no-sidebar .items .items-inner .img-box .details-box .details-box-inner{}
+.photography-business-single-no-sidebar .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.photography-business-single-no-sidebar .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-single-no-sidebar .items .items-inner .img-box .details-box .details-box-inner p a:hover {
+    text-decoration: underline;
+}
+/* END SINGLE NO SIDEBAR */
+
+
+/* BEGIN SINGLE PAGE BUILDER NO TITLE */
+.photography-business-single-page-builder-no-title {}
+.photography-business-single-page-builder-no-title .items-guten{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .title-header{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .title-header .title{
+    font-size: 70px;
+}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .title-header .title-content{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .title-header .title-content a{
+    color: #353535;
+}
+
+
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .details-box{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .details-box .details-box-inner{}
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-single-page-builder-no-title .items-guten .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+/* END SINGLE PAGE BUILDER NO TITLE */
+
+
+/* BEGIN PAGE STYLE */
+.photography-business-page {}
+
+.photography-business-page .inner {}
+
+.photography-business-page .inner .blog-2-col-inner {}
+
+.photography-business-page .inner .blog-2-col-inner .items {
+    margin: 20px 0px;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner {
+    border-radius: 8px;
+    padding: 20px 30px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box img{
+    width: 80%;
+    display: block;
+    margin: 30px auto 30px;
+    height: auto;
+    max-height: 610px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .category{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 46px;
+    color: #353535;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner {}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner a { color: #353535; }
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .category{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .date{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .author{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .comments{}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a:hover {
+    text-decoration: underline;
+}
+
+.photography-business-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p img{
+    display: block;
+    margin: 0px auto 15px;    
+    max-height: 610px;
+}
+
+/* END PAGE STYLE */
+
+
+
+
+/* BEGIN PAGE NO SIDEBAR NO TITLE STYLE */
+.photography-business-page-no-sidebar-no-title {}
+
+.photography-business-page-no-sidebar-no-title .inner {}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner {}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items {
+    margin: 20px 0px;
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner {
+    border-radius: 2px;
+    padding: 20px 30px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box img{
+    width: 80%;
+    display: block;
+    margin: 30px auto 30px;
+    height: auto;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .category{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 33px;
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner {}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner a { color: #353535; }
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .category{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .date{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .author{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .comments{}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+
+.photography-business-page-no-sidebar-no-title .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p img{
+    display: block;
+    margin: 0px auto 15px;    
+}
+
+/* END PAGE NO SIDEBAR NO TITLE  STYLE */
+
+
+/* BEGIN PAGE NO SIDEBAR STYLE */
+.photography-business-page-no-sidebar {}
+
+.photography-business-page-no-sidebar .inner {}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner {}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items {
+    margin: 20px 0px;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner {
+    border-radius: 2px;
+    padding: 20px 30px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box img{
+    width: 80%;
+    display: block;
+    margin: 30px auto 30px;
+    height: auto;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .category{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box h2{
+    text-align: center;
+    font-size: 35px;
+    line-height: 46px;
+    color: #353535;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner {}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner a { color: #353535; }
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .category{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .date{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .author{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .comments{}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+
+.photography-business-page-no-sidebar .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p img{
+    display: block;
+    margin: 0px auto 15px;    
+}
+
+/* END PAGE NO SIDEBAR   STYLE */
+
+/* BEGIN PAGE BUILDER STYLE */
+.photography-business-page-builder {
+    background: #fff;
+}
+
+.photography-business-page-builder .items{}
+
+.photography-business-page-builder .items .items-inner{}
+.photography-business-page-builder .items .items-inner .img-box{}
+
+.photography-business-page-builder .items .items-inner .img-box h2{
+    padding-top: 15px;
+    font-size: 70px;
+}
+
+.photography-business-page-builder .items .items-inner .img-box .details-box{}
+.photography-business-page-builder .items .items-inner .img-box .details-box .details-box-inner{}
+
+.photography-business-page-builder .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.photography-business-page-builder .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-page-builder .items .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+/* END PAGE BUILDER STYLE */
+
+/* BEGIN PAGE BUILDER NO TITLE STYLE */
+.photography-business-page-builder-no-title {
+    background: #fff;
+}
+
+.photography-business-page-builder-no-title .items{}
+.photography-business-page-builder-no-title .items .items-inner{}
+.photography-business-page-builder-no-title .items .items-inner .img-box {}
+.photography-business-page-builder-no-title .items .items-inner .img-box h2{
+    padding-top: 15px;
+    font-size: 70px;
+}
+
+.photography-business-page-builder-no-title .items .items-inner .img-box .details-box{}
+.photography-business-page-builder-no-title .items .items-inner .img-box .details-box .details-box-inner{}
+
+.photography-business-page-builder-no-title .items .items-inner .img-box .details-box .details-box-inner p{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+.photography-business-page-builder-no-title .items .items-inner .img-box .details-box .details-box-inner p a{
+    color: #1e67c1 !important;
+}
+
+.photography-business-page-builder-no-title .items .items-inner .img-box .details-box .details-box-inner p a:hover{
+    text-decoration: underline;
+}
+/* END PAGE BUILDER NO TITLE STYLE */
+
+
+
+
+/* BEGIN COMMENTS STYLE */
+.wrap-comments  {
+    margin: 30px 0px 30px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #a5a5a5;
+}
+
+.wrap-comments .comments-title{
+    margin-bottom: 20px;  
+}
+
+.wrap-comments .comments-title{
+    margin-bottom: 20px;  
+}
+
+.wrap-comments .comment-list{
+    list-style: none;
+}
+
+.wrap-comments .comment-list .comment{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-author{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-author .avatar{
+    max-width: 64px;
+    max-height: 64px;
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-author .fn{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-author .says{
+      display: none;
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-meta{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-meta a{
+      
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-meta a:nth-child(1){
+      color: #23235f;
+}
+
+.wrap-comments .comment-list .comment .comment-body .comment-meta .comment-edit-link{
+      color: #23235f;
+}
+
+.wrap-comments .comment-list .comment .comment-body p{
+    display: flex;
+    line-height: 23px;
+    font-size: 17px;
+    font-weight: 300;
+    margin: 10px 0px 10px 0px;
+}
+
+.wrap-comments .comment-list .comment .comment-body .reply{
+      text-align: right;
+}
+
+.wrap-comments .comment-list .comment .comment-body .reply .comment-reply-link{
+    color: #fff;
+    background-color: blue;
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #353535;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.wrap-comments .comment-list .comment .children{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 90px;
+    margin: 0px 0px 20px 0px; 
+}
+
+.wrap-comments .comment-list .comment .children .comment{
+      
+}
+
+.wrap-comments .comment-list .comment .children .comment .comment-body{
+      
+}
+
+.wrap-comments .comment-respond {
+    
+}
+
+.wrap-comments .comment-respond .comment-reply-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.wrap-comments .comment-respond .comment-reply-title small{}
+
+.wrap-comments .comment-respond .comment-reply-title small a{}
+
+.wrap-comments .comment-respond .comment-form {}
+
+.wrap-comments .comment-respond .comment-form p{
+
+}
+
+.wrap-comments .comment-respond .comment-form .logged-in-as{
+    color: #505050;
+}
+
+.wrap-comments .comment-respond .comment-form .logged-in-as a{
+    color: #2d93de;
+}
+
+.wrap-comments .comment-respond .comment-form .logged-in-as a:nth-child(1){
+
+}
+
+.wrap-comments .comment-respond .comment-form .logged-in-as a:nth-child(2){
+
+}
+
+.wrap-comments .comment-respond .comment-form p label{}
+
+.wrap-comments .comment-respond .comment-form p label .required{
+    color: #f50707;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.wrap-comments .comment-respond .comment-form p input{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.8px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+}
+
+.wrap-comments .comment-respond .comment-form p textarea{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0,0,0,.5) inset;
+    border: 0.8px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.wrap-comments .comment-respond .comment-form .comment-notes {
+    margin: 0px;
+    display: none;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment{
+    margin-top: 20px;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment #email-notes{}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment .required{
+    text-decoration: none;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment label{
+    font-weight: 700;
+    font-size: 17px;
+    color: #505050;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment textarea{
+    width: 100%;
+    resize: none;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment textarea:focus {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-comment textarea:focus-within{
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author{
+    margin-top: 20px;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author #author:focus {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email #email:focus {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-url #url:focus {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author #author:focus-within {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email #email:focus-within {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-url #url:focus-within {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .form-submit .submit:focus-within {
+    border-color: blue;
+}
+
+.wrap-comments .comment-respond .comment-form .form-submit .submit:hover {
+    color: #1e67c1;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author label{
+    font-weight: 700;
+    font-size: 17px;
+    color: #505050;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author label span{}
+
+.wrap-comments .comment-respond .comment-form .comment-form-author #author{
+    width: 100%;
+    outline: none;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email{
+    margin-top: 20px;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email label{
+    font-weight: 700;
+    font-size: 17px;
+    color: #505050;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email label span{}
+
+.wrap-comments .comment-respond .comment-form .comment-form-email #email{
+    width: 100%;
+    outline: none;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-url{
+    margin-top: 20px;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-url label{
+    font-weight: 700;
+    font-size: 17px;
+    color: #505050;
+}
+
+.wrap-comments .comment-respond .comment-form .comment-form-url #url{
+    width: 100%;
+    outline: none;
+}
+
+.wrap-comments .comment-respond .comment-form .form-submit{
+    margin: 20px 0px;
+    text-align: right;
+}
+
+.wrap-comments .comment-respond .comment-form .form-submit .submit{
+    border-color: #181819;
+    background: #353535;
+    color: #fff !important;
+    padding: 13px 14px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 3px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: rgba(255,255,255,0.6) 0 1px 0 inset;
+    outline: none;
+}
+
+.wrap-comments .comment-respond .comment-form .form-submit .submit:hover{
+    color: #1e67c1 !important;
+}
+/* END COMMENTS STYLE */
+
+
+/* BEGIN 404 ERROR STYLE */
+.error-404 {}    
+
+.error-404 .inner {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.error-404 .error{}
+        
+.error-404 .error .error-inner{}
+        
+.error-404 .error .error-inner .error-items{}   
+        
+.error-404 .error .error-inner .error-items h1{
+    font-size: 128px;
+    margin-top: -9px;
+    line-height: 100px;
+    color: #717171;
+} 
+        
+.error-404 .error .error-inner .error-items .not-found{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #717171;
+} 
+        
+.error-404 .error .error-inner .error-items .btn{} 
+        
+.error-404 .error .error-inner .error-items .btn a{
+    background-color: #e0162a;
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: 400;
+    text-decoration: none;
+}     
+
+/* END 404 ERROR STYLE */
+
+/***** BEGIN PAGINATION *****/
+.pagination {
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.pagination .screen-reader-text{
+    display: none;
+}
+
+.pagination .current {
+    background: #fff;
+    color: #353535;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0px 4px;
+    border: 1px solid #353535;
+}
+
+.pagination a {
+    color: #353535;
+}
+
+.page-numbers {
+    background: #fff;
+    border: 1px solid #353535;
+    color: #353535;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0px 4px;
+}
+/***** END PAGINATION *****/
+
+
+/***** BEGIN SIDEBAR *****/
+.sidebar {}
+
+.sidebar a{
+    transition: .3s linear;
+}
+.sidebar a:hover {
+    color: #1e67c1 !important;
+}
+
+.sidebar .sidebar-inner{
+    margin: 20px 0px 0px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items{
+    border-radius: 8px;
+    padding: 0px 0px 0px 0px;
+    background: #fff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #a5a5a5;
+}
+
+.sidebar .sidebar-inner .sidebar-items .size-medium{
+    width: 100%;
+    display: block;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap {
+
+}
+
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap {
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table{
+    width: 100%;
+    padding: 0px 20px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table caption{
+    padding: 15px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background: transparent;
+    color: #353535;
+    font-size: 17px;
+    /* font-size: 24px; */
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table thead{
+    padding: 0px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table thead tr{
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table thead tr th{
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tbody{
+    padding: 0px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tbody tr{
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tbody tr td{
+    text-align: center;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tbody tr td a{
+    color: #353535;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tfoot{
+    padding: 0px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tfoot tr{
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tfoot tr td{
+
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap table tfoot tr td a{
+    color: #353535;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap .wp-calendar-nav {}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap .wp-calendar-nav .wp-calendar-nav-prev{}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap .wp-calendar-nav .wp-calendar-nav-prev a{
+    color: #353535;
+}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap .wp-calendar-nav .pad{}
+
+.sidebar .sidebar-inner .sidebar-items .calendar_wrap .wp-calendar-nav .wp-calendar-nav-next{}
+
+.sidebar .sidebar-inner .sidebar-items .tagcloud{
+    margin: 20px 0px;
+    padding: 0px 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .tagcloud a{
+    color: #353535;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform {
+    padding: 20px 0px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div {
+    text-align: center;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div .screen-reader-text {
+    display: none;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #s {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fff;
+    border-radius: 22px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #s:focus-within {
+    border-color: blue;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #s:focus {
+    border-color: blue;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #searchsubmit {
+    color: #484343;
+    display: inline-block;
+    /* margin: 20px 0px; */
+    padding: 7px 15px;
+    border: 1px solid #484343;
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: #fff;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    outline: none;
+    transition: .2s linear;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #searchsubmit:focus-within {
+    border-color: blue;
+}
+
+.sidebar .sidebar-inner .sidebar-items .searchform div #searchsubmit:hover {
+    background: #fff;
+    color: #484343;
+    border: 1px solid #484343;
+}
+
+.sidebar .sidebar-inner .sidebar-items h2 {
+    padding: 15px 0px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    background: transparent; 
+    color: #484343;
+    font-size: 17px;
+}
+
+.sidebar .sidebar-inner .sidebar-items ul {
+    padding: 0px 20px 20px 20px;
+
+}
+
+.sidebar .sidebar-inner .sidebar-items ul li{
+    list-style: none;
+}
+
+.sidebar .sidebar-inner .sidebar-items ul li a{
+    color: #353535;
+    display: block;
+    padding: 0px 0px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.sidebar .sidebar-inner .sidebar-items #recentcomments {
+    padding: 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items #recentcomments .recentcomments{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.sidebar .sidebar-inner .sidebar-items #recentcomments .recentcomments .comment-author-link{
+    color: #333;
+    font-size: 17px;
+    font-weight: 700;
+}
+    
+.sidebar .sidebar-inner .sidebar-items #recentcomments .recentcomments a{
+    color: #484343;
+    transition: .5s;
+}    
+
+.sidebar .sidebar-inner .sidebar-items #recentcomments .recentcomments a:hover{
+    color: #cc2b4f;
+}
+
+.sidebar .sidebar-inner .sidebar-items .textwidget{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .textwidget a{}
+
+.sidebar .sidebar-inner .sidebar-items .textwidget p{
+    color: #484343;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .textwidget p a{
+    color: #484343;
+    text-decoration: underline;
+}
+
+.sidebar .sidebar-inner .sidebar-items .textwidget p a i{}
+
+.sidebar .sidebar-inner .sidebar-items .gallery{}
+
+.sidebar .sidebar-inner .sidebar-items .gallery .gallery-item{
+    margin: 0px !important;
+}
+
+.sidebar .sidebar-inner .sidebar-items .gallery .gallery-item .gallery-icon{
+    margin: 1px;
+}
+
+.sidebar .sidebar-inner .sidebar-items .gallery .gallery-item .gallery-icon a{}
+
+.sidebar .sidebar-inner .sidebar-items .gallery .gallery-item .gallery-icon a img{
+    width: 100%;
+    display: block;
+    border: 0px !important;
+    height: 95px;
+}
+         
+
+/***** END SIDEBAR *****/
+
+
+/* BEGIN EASY DIGITAL DOWNLOADS */
+
+.edd-page {}
+.edd-page .blog-2-col-inner {}
+.edd-page .blog-2-col-inner .items {}
+.edd-page .blog-2-col-inner .items .items-inner {
+    border-radius: 2px;
+    padding: 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #bdbdbd;
+    box-shadow: 0 1px 3px 0 rgba(60,64,67, 0.3), 0 4px 8px 3px rgba(60,64,67, 0.15);
+}
+
+.single-download  {}
+.single-download .blog-2-col-inner div > span {
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-download .blog-2-col-inner .items  {}
+.single-download .blog-2-col-inner .items .items-inner {}
+
+
+/* END EASY DIGITAL DOWNLOADS */
+
+
+/* BEGIN WOOCOMMERCE */
+.required {
+    text-decoration: none;
+}
+
+.photography-business-woocommerce {}
+
+.photography-business-woocommerce .blog-2-col-inner {}
+
+.photography-business-woocommerce .blog-2-col-inner .items {
+    margin: 0px 0px;
+    background: none;
+    box-shadow: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner {
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box {
+
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .page-title{
+
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-breadcrumb {}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-products-header{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-products-header page-title{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-result-count {}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-ordering{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .woocommerce-ordering .orderby{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product{
+    //box-shadow: 1px 1px 10px 0px rgba(0,0,0,.6);
+    width: 31.3%;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: #fff;
+    /*box-shadow: 1px 1px 5px 1px rgba(0,0,0,.4);*/
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .button{
+    color: #fff;
+    background-color: blue;
+    margin: 20px auto;
+    //margin: 0px auto 20px;
+    display: block;
+    width: 35%;
+    padding: 13px 11px;
+    /* border: 0.1px solid #ccc; */
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: linear-gradient(#303039 0%,#303039 100%);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,.8);
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .onsale{
+    background: linear-gradient(#ff3030 0%,#ef3030 100%);
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .attachment-woocommerce_thumbnail{
+    height: 280px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .woocommerce-loop-product__title{
+    margin-left: 10px;
+    color: #353535;
+    text-align: center;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price{
+    text-align: center;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price del{
+    display: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price del .amount{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price del .amount .woocommerce-Price-currencySymbol{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price ins{
+    text-decoration: none;
+    color: #0c4abf;
+    margin-right: 10px;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price ins .amount{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .woocommerce-LoopProduct-link .price ins .amount .woocommerce-Price-currencySymbol{}
+
+
+/* BEGIN WOOCOMMERCE SINGLE */
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary{
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_title{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price del{
+    display: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price del .amount{
+    
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price del .amount .woocommerce-Price-currencySymbol{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price ins{
+    text-decoration: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price ins .amount{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .price ins .amount .woocommerce-Price-currencySymbol{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .woocommerce-product-details__short-description{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .woocommerce-product-details__short-description p{
+    color: #454545;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    margin: 10px 0px 30px 0px;
+    line-height: 25px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .woocommerce-product-details__short-description p img{
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta {}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .posted_in {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .posted_in a{
+    color: #454545;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .tagged_as {
+    display: block;
+    margin: 0px 0px 10px 0px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .tagged_as a{
+    color: #454545;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .tagged_as a{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .tagged_as a:(nth-child(1)){}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .product_meta .tagged_as a:(nth-child(2)){}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart .quantity{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart .quantity .screen-reader-text{
+    margin: 0px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart .quantity .input-text{
+    padding: 8px 10px;
+    outline: none;
+    margin-right: 20px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart .button{
+    outline: none;
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    color: #fff;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;    
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs {}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs {}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs:before {
+    border-bottom: 1px solid #678ac7;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .description_tab{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .description_tab a{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .active{
+    background: #1d2733;
+    color: #fff;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .active{
+    background: #1d2733;
+    color: #fff;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .reviews_tab{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .tabs .reviews_tab a{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description h2{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description .mejs-offscreen{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description .mejs-audio{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description p{
+    color: #454545;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    margin: 10px 0px 0px 0px;
+    line-height: 25px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description p img{
+    display: block;
+    margin: 10px auto 30px;
+    max-width: 90%;
+    height: auto;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description .wp-video{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #comments{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #comments .woocommerce-Reviews-title{
+    margin-bottom: 15px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #comments .woocommerce-noreviews{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form{
+    padding: 10px 0px;
+    box-sizing: border-box;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating label{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating .stars{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating .stars span{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating .stars span a{
+    color: #e3c41d;
+}    
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-rating select{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-comment{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-comment label{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-comment label .required{
+    color: red;
+    text-decoration: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .comment-form-comment textarea{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .form-submit{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-form .form-submit .submit{
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    border: 1px solid #e3e3e3;
+    padding: 12px 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-reply-title{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-reply-title small{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews #review_form_wrapper #review_form .comment-respond .comment-reply-title small a{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--reviews .woocommerce-Reviews .clear{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .onsale{
+    background: linear-gradient(#ff3030 0%,#ef3030 100%);
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-product-gallery{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image{
+    margin: 0px 5px 0px 0px;
+}
+
+.woocommerce-product-gallery__image{
+    margin: 0px 5px 0px 0px;
+}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a{}
+
+.photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-product-gallery .woocommerce-product-gallery__wrapper .woocommerce-product-gallery__image a img{
+    display: block;
+    margin: 0px 20px 10px 0px;
+    height: 100%;
+}
+
+.woocommerce-product-gallery__image a img{
+    display: block;
+    margin: 0px 20px 10px 0px;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
+    height: 147px;
+}
+
+
+/* END WOOCOMMERCE SINGLE */
+
+
+
+
+.woocommerce-cart {}
+
+.woocommerce-cart .sidebar{
+    display: none;
+}
+.woocommerce-cart .items{
+    width: 100%;
+    margin: 20px 20px 140px 20px;
+}
+
+.woocommerce-account {}
+
+.woocommerce-account .sidebar{
+    display: none;
+}
+
+.woocommerce-account .items{
+    width: 100%;
+    margin: 20px 20px 140px 20px;
+}
+
+.woocommerce-checkout {}
+
+.woocommerce-checkout .sidebar{
+    display: none;
+}
+
+.woocommerce-checkout .items{
+    width: 100%;
+    margin: 20px 20px 140px 20px;
+}
+
+/* BEGIN WOOCOMMERCE PAGE  */
+.photography-business-woocommerce-page {}
+.photography-business-woocommerce-page .sidebar {
+    
+}
+.photography-business-woocommerce-page .inner{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .photography-business-woocommerce-page-wid-100 {
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner{
+    border-radius: 2px;
+    padding: 20px;
+    border: 1px solid #bfbfbf;
+    background: #ffffff;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box h2{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner p{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation ul{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation ul li{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation ul .is-active{
+    background: #1d2733;
+    color: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation ul .is-active a{
+    color: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-navigation ul li a{
+    display: block;
+    padding: 10px 0px;
+    //background: #ccc;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-message{
+    border-top-color: #1d2733;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-message:before{
+    color: #1d2733;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-message .button{
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Message{
+    border-top-color: #1d2733;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Message:before{
+    color: #1d2733;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Message .button{
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content p{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content p:nth-child(1) {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-MyAccount-content p:nth-child(1) strong{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content p:nth-child(1) a{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content p:nth-child(2) {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content p:nth-child(2) a{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address .title{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address .title:before{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address h3{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .woocommerce-Address .edit{
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 .title{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 .title:before{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 .title h3{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 .title .edit{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 address{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-MyAccount-content .woocommerce-Addresses .col-2 address{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-info {
+    border-top-color: #33312b;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-info:before {
+    color: #33312b;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields h3{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.col2-set .col-1 .woocommerce-billing-fields 
+.woocommerce-billing-fields__field-wrapper .form-row .button{
+    background: linear-gradient(#678ac7 0%,#678ac7 100%);
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-first{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-first label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-first label .required{
+    text-decoration: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-first .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-last{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-last label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-last label .required{
+    text-decoration: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row-last .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-1 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .form-row label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-2{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-2  .form-row {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .col2-set .col-2  .form-row .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout #order_review_heading{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .place-order{
+    background: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods{
+    background: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method .payment_box {
+    background: crimson;
+    color: #fff;
+}
+
+.payment_box {
+    background: crimson;
+    color: #fff;
+}
+
+.payment_box:before {
+    border: 1em solid crimson;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method .payment_box:before {
+    border: 1em solid crimson;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .woocommerce-checkout-payment .methods .wc_payment_method .payment_box p {
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order img{
+    height: 80px;
+    width: 22%;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout 
+.woocommerce-checkout-review-order .button{
+    background: linear-gradient(#678ac7 0%,#678ac7 100%);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment img{
+    height: 60px;
+    width: 25%;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment ul{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment ul li{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment ul li .input-radio{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment .form-row{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box 
+.details-box-inner .woocommerce .woocommerce-checkout .woocommerce-checkout-review-order .shop_table .woocommerce-checkout-payment .form-row .button{
+    background: linear-gradient(#1d2733 0%, #1b2a3c 100%);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+
+/* END WOOCOMMERCE PAGE */
+
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation ul{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation ul li{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation ul li a{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account p .button {
+    background: linear-gradient(#1d2733 0%,#1d2733 100%);
+    padding: 15px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-first{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-first:before{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-first label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-first .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-last{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-last:before{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-last label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-last .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-wide{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-wide:before{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-wide label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .form-row-wide .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row label .required{
+    text-decoration: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row input{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-content .edit-account .woocommerce-form-row .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce form .form-row label, .woocommerce-page form .form-row label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce form .form-row .input-text, .woocommerce-page form .form-row .input-text {
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content fieldset{
+    border: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account fieldset{
+    border: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account fieldset legend{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account fieldset .form-row{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account fieldset .form-row label{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account fieldset .form-row .input-text{
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation .woocommerce-MyAccount-content .edit-account p{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items .items-inner .img-box .details-box .details-box-inner 
+.woocommerce .woocommerce-MyAccount-navigation 
+.woocommerce-MyAccount-content .edit-account p .button{
+    background: linear-gradient(#678ac7 0%,#678ac7 100%);
+    outline: none;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form {}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form .shop_table{
+    background: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form .shop_table thead{
+    background: #1d2733;
+    color: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form .shop_table tbody{
+    
+} 
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form .shop_table tbody .cart_item{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce .woocommerce-cart-form .shop_table tbody tr{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.woocommerce-cart-form .shop_table tbody tr .actions{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.woocommerce-cart-form .shop_table tbody tr .actions .button{
+    background: #1d2733;
+    color: #fff;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.woocommerce-cart-form .shop_table tbody tr .actions .coupon{}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.woocommerce-cart-form .shop_table tbody tr .actions .coupon #coupon_code{
+    width: 100px;
+}
+
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.woocommerce-cart-form .shop_table tbody tr .actions .coupon .button{
+    background: linear-gradient(#fc6 0%, #fc6 100%);
+    color: #353535;
+    color: #fff;
+    outline: none;
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals .cart_totals{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals .cart_totals h2{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals .cart_totals .shop_table{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals .cart_totals .wc-proceed-to-checkout{
+    
+}
+
+.photography-business-woocommerce-page .inner .blog-2-col-inner .items 
+.items-inner .img-box .details-box .details-box-inner .woocommerce 
+.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button{
+    background: linear-gradient(#1d2733 0%,#1d2733 100%);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items {
+    background: #fff;
+    /*box-shadow: 0px 0px 4px 0px rgba(0,0,0,.6);*/
+}
+
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .woocommerce-tabs .woocommerce-Tabs-panel--description p img{
+    display: block;
+    margin: 10px auto 30px;
+    max-width: 90%;
+    height: auto;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .product .woocommerce-tabs .woocommerce-Tabs-panel--description p {
+    color: #454545;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    margin: 10px 0px 0px 0px;
+    line-height: 25px;
+    padding: 0px 30px;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .product .woocommerce-tabs .woocommerce-Tabs-panel--description h2{
+    text-align: center;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .related .products {
+    width: 100%;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .related {}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .related h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .product .woocommerce-product-gallery {
+    padding: 29px 20px;
+    box-sizing: border-box;
+}
+
+.single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box  .product .summary .cart .button{
+    color: #fff;
+    background-color: blue;
+    margin: 0px auto;
+    //margin: 0px auto 20px;
+    display: block;
+    width: 35%;
+    padding: 13px 11px;
+    border: none ;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: linear-gradient(#303039 0%,#303039 100%);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,.8);
+}
+
+
+/* END WOOCOMMERCE */
+
+
+
+/* BEGIN BUDDYPRESS */
+.buddypress {}
+
+.buddypress .buddypress-wrap {}
+
+.buddypress .buddypress-wrap .activity-update-form {
+    padding: 20px 20px 0 !important;
+}
+
+.buddypress .buddypress-wrap .activity-update-form #whats-new-avatar img {
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .in-profile {}
+
+.buddypress .buddypress-wrap .in-profile .button {
+    background: #3d3d3d;
+    color: #fff;
+    font-weight: 900;
+    padding: 10px 10px;
+    border-radius: 30px;
+    transition: .3s linear;
+}
+
+.buddypress .buddypress-wrap .in-profile .button:hover {
+    color: #4183d5;
+}
+
+.buddypress .buddypress-wrap .single-headers {}
+.buddypress .buddypress-wrap .single-headers .bp-wrap {}
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members .members-list {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members .members-list li {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members .members-list li .list-wrap {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members .members-list li .list-wrap .item-avatar {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .members .members-list li .list-wrap .item-avatar img {
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .activity{}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .activity .activity-list {
+    padding: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .activity .activity-list .activity {
+    
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .activity .activity-list .activity .activity-inner{
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .screen-content .activity .activity-list .activity .activity-inner{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .members-nav{}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .members-nav li {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .members-nav li a{
+    color: #fff;
+    background: #353535;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .members-nav li a .count{
+    font-weight: 900;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .activity-nav {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .activity-nav li {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .main-navs .activity-nav li.selected {
+    color: #fff;
+    background: #353535;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body{} 
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .activity{}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .activity .activity-list{
+    padding: 0px !important;
+    margin: 0px !important;
+    border: 0px !important;
+    background: #fff;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .activity .activity-list .activity-header{
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .activity .activity-list .activity-inner{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile .editfield{
+    padding: 0px !important;
+    background: #fff;
+    border: 0px !important;
+} 
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile .editfield fieldset {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile .editfield fieldset #field_1{
+    width: 95%;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile .editfield .submit {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .profile .editfield .submit input[type=submit]{
+    background: #3d3d3d;
+    color: #fff;
+    padding: 16px 16px;
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .standard-form {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .standard-form .submit {}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .standard-form .submit input[type=submit]{
+    background: #3d3d3d;
+    color: #fff;
+    padding: 16px 16px;
+    border-radius: 30px;
+    font-weight: 900;
+} 
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .member-front-page{}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .member-front-page .bp-feedback{
+    padding: 15px 15px !important; 
+}
+
+.buddypress .buddypress-wrap .single-headers .bp-wrap .item-body .member-front-page .bp-feedback a{
+    color: #4183d5 !important; 
+}
+
+
+/* END BUDDYPRESS */
+
+
+
+
+
+
+/* BEGIN FOOTER STYLE */
+.footer-4-col { 
+    background: #353535; 
+    color: #fff;
+}   
+      
+.footer-4-col a{ 
+    transition: .6s linear;
+}   
+
+.footer-4-col a:hover{ 
+    color: #1e67c1 !important;
+}   
+           
+.footer-4-col  .inner{} 
+        
+.footer-4-col  .inner .footer{}
+        
+.footer-4-col  .inner .footer .footer-inner{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+        
+.footer-4-col  .inner .footer .footer-inner .footer-items{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items a {
+    color: #fff;
+}
+        
+.footer-4-col  .inner .footer .footer-inner .footer-items .site-info-inner{
+    padding: 20px 0px;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+}
+        
+.footer-4-col  .inner .footer .footer-inner .footer-items .site-info-inner a{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap {
+    color: #fff;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table{
+    width: 100%;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table caption{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+    text-align: left;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table thead{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table thead tr{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table thead tr th{
+    
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tbody{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tbody tr{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tbody tr td{
+    
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tbody tr td a{
+    color: #353535;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tfoot{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tfoot tr{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tfoot tr td{
+
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items .calendar_wrap table tfoot tr td a{
+    color: #fff;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li{}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .tagcloud{
+    margin: 20px 0px;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .tagcloud a{
+    color: #fff;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 0px 10px 10px 0px;
+    display: inline-block;
+}
+
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .searchform {}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .searchform div {
+    /*text-align: center; */
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .searchform div .screen-reader-text {
+    display: none;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .searchform div #s {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.5) inset;
+    border: 0.1px solid #e0e0e0;
+    background-color: #fdfdfd;
+    border-radius: 2px;
+    outline: none;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .searchform div #searchsubmit {
+    color: #fff;
+    background-color: blue;
+    display: inline-block;
+    /* margin: 20px 0px; */
+    padding: 7px 15px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: #211d1d;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.footer-4-col .inner .footer .footer-inner .footer-items li #recentcomments {}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li #recentcomments .recentcomments{
+    list-style: none;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li #recentcomments .recentcomments .comment-author-link{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+}
+    
+.footer-4-col .inner .footer .footer-inner .footer-items li #recentcomments .recentcomments a{
+    color: #fff;
+    transition: .5s;
+}    
+
+.footer-4-col .inner .footer .footer-inner .footer-items li #recentcomments .recentcomments a:hover{
+    color: #cc2b4f;
+}
+
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li{
+    margin-bottom: 30px;
+    float: left;
+    width: 33.3%;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .custom-html-widget{
+    color: #fff;
+    padding: 10px 0px;
+    line-height: 28px;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .custom-html-widget a{
+    color: #fff;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .custom-html-widget p{
+    color: #fff;
+    margin: 10px 0px;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .gallery{}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .gallery .gallery-item{
+    margin: 0px !important;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .gallery .gallery-item .gallery-icon{
+    margin: 1px;
+}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .gallery .gallery-item .gallery-icon a{}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li .gallery .gallery-item .gallery-icon a img{
+    width: 100%;
+    display: block;
+    border: 0px !important;
+    height: 95px;
+}
+         
+.footer-4-col  .inner .footer .footer-inner .footer-items li h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+        
+.footer-4-col  .inner .footer .footer-inner .footer-items li ul li{
+    margin: 0px;
+    float: left;
+    width: 100%;
+}
+       
+.footer-4-col  .inner .footer .footer-inner .footer-items li ul {
+    
+}
+         
+.footer-4-col  .inner .footer .footer-inner .footer-items li ul li a{
+    color: #fff;
+    display: block;
+    padding: 0px 0px;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .textwidget{
+    margin-top: 20px;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .textwidget a{}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .textwidget p{
+    color: #fff;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .textwidget p a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-4-col .inner .footer .footer-inner .footer-items li .textwidget p a i{}
+
+.footer-4-col  .inner .footer .footer-inner .footer-items li a{
+    
+}
+
+           
+.footer-4-col  .inner .footer .footer-inner .footer-items img{
+    
+}
+    
+/* END FOOTER STYLE */
+
+
+
+/* BEGIN MOBILE SCREEN STYLE */
+        
+@media screen and (max-width: 767px)
+{
+    /* BEGIN MOBILE NAV MENU */
+
+    .mobwid {
+        width: 100%;
+    }
+
+    .mobwid-100 {
+        width: 100%;
+    }
+
+    .mobwid-90 {
+        width: 90%;
+    }
+
+    .mobwid-50 {
+        width: 50%;
+    }
+
+    .mob-mg-bt-30 { margin-bottom: 30px; }
+
+    .site-mob-title {
+        display: block;
+        transform: scale(1);
+        text-align: center;
+        background: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        float: left;
+        width: 100%;
+    }
+    
+    .site-mob-title a{
+        text-decoration: none;
+        color: #353535;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    
+    .nav-outer {
+        
+    }
+
+    
+    .theme-nav {
+        overflow: hidden;
+        display: none;
+        transition: .4s;
+    }
+    
+    
+    
+    .mobpad {
+        padding: 0px 20px;
+    }
+    
+    .flowid {
+    
+    }
+    
+    .theme-nav li {
+        width: 100%;
+        transition: .4s;
+    }
+    
+    .theme-nav li:nth-child(1){
+        
+    }
+    
+    .theme-nav li a{
+        padding: 0px;
+        margin: 0px;
+        height: 0px;
+        transition: 1s;
+    }
+    
+    .theme-nav ul {
+        transition: 1s;
+    }
+    
+    
+    .navcheck {
+        position: absolute;
+        top: 0em;
+        left: 0;
+        opacity: 0;
+        z-index: 3;
+        width: 35px;
+        height: 41px;
+    }
+    
+
+    .theme-nav .menu {
+        float: none;
+    }        
+    .theme-nav .menu  li{}        
+    .theme-nav .menu  li a{
+        margin: 0px;
+    }   
+    
+    .theme-nav .menu li ul {
+        position: initial;
+        display: block;
+    }
+
+    .theme-nav .menu ul ul li {
+        display: block;
+    }
+
+    .theme-nav .logo li:nth-child(1) {
+        display: none;
+    }      
+
+
+    .panbtn {
+        padding: 2px 5px;
+        display:block;
+        border: 2px solid transparent;
+        background: transparent;
+        z-index: 10;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .panbtn > div {
+        width: 20px;
+        height: 4px;
+        background: #353535;
+        margin: 3px 0px;
+        transition: .5s;
+    }
+
+
+    .navlabel {
+        cursor: pointer;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        overflow: hidden;
+        white-space: nowrap;
+        z-index: 2;
+        top: 1em;
+        left: 0;
+    }
+
+
+    .mob-nav-one {
+        transform: rotate(0deg);
+    }
+    .mob-nav-two {
+        transition: .5s;
+        transform: rotate(0deg) scale(1);
+    }
+    .mob-nav-three {
+        transform: rotate(0deg);
+    }
+
+    .panbtn.close .mob-nav-one {
+        transform: rotate(45deg) translate(6px, 3px);
+    }
+    
+    .panbtn.close .mob-nav-two {
+        transform: scale(0);
+        transition: .5s;
+    }
+
+    .panbtn.close .mob-nav-three {
+        transform: rotate(-45deg) translate(6px, -4px);
+    }
+
+    .panbtn.close ~ .theme-nav{
+        display: block;
+    }
+    .panbtn.close ~ .theme-nav li a {
+        height: 50px;
+    }
+ 
+
+    /* END MOBILE NAV MENU */
+    .photography-business-show {
+        display: none;
+    }
+
+     .photography-business-diff {
+        display: none;
+    }
+
+
+    .photography-business-3-col-blog-post {
+        display: none;
+    }
+
+    .photography-business-img-gallery {
+        display: none;
+    }
+
+    .photography-business-show .right-side .photography-business-show-items:nth-child(2) {
+        height: 330px;
+    }
+
+    .photography-business-show .right-side .photography-business-show-items:nth-child(3) {
+        height: 330px;
+    }
+
+    .photography-business-show .right-side .photography-business-show-items:nth-child(4) {
+        height: 330px;
+    }
+
+    
+    .photography-business-diff .left-side {
+        margin-bottom: 15px;
+    }
+
+    .sidebar .sidebar-inner{
+        margin: 20px 0px 0px 0px;
+    }
+
+    /* BEGIN stylish-news INDEX   */
+    .photography-business-index .blog-2-col-inner .items .items-inner .img-box .img-wrap img {
+        height: auto !important;
+    }
+
+    /* END stylish-news INDEX   */
+
+
+    /* BEGIN stylish-news INDEX TWO  */
+
+    .photography-business-index-two .blog-2-col-inner .items {
+        width: 100%;
+    }
+    .photography-business-index-two .blog-2-col-inner .items .items-inner .img-box .img-wrap img {
+        height: auto !important;
+    }
+
+    /* END stylish-news INDEX TWO  */
+
+
+    /* BEGIN stylish-news INDEX THREE  */
+    .photography-business-index-three .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+        width: 100%;
+        margin: 0px;
+    }
+
+
+    .photography-business-index-three .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+        height: auto !important;
+    }
+
+    /* BEGIN stylish-news INDEX FOUR  */
+
+    .photography-business-index-four .blog-2-col-inner .items {
+        width: 100%;
+    }
+
+    /* END stylish-news INDEX FOUR  */
+
+    .photography-business-index-five .blog-2-col-inner .items {
+        width: 100%;
+    }
+
+    /* END stylish-news INDEX FIVE  */
+
+    /* BEGIN stylish-news INDEX SIX */
+
+    .photography-business-index-six .blog-2-col-inner .items  .items-inner .img-box .img-wrap {
+        width: 100%;
+    }   
+
+
+    .photography-business-index-six .blog-2-col-inner .items  .items-inner .img-box .details-box {
+        width: 100%;
+    }
+
+
+    .photography-business-index-six .blog-2-col-inner .items  .items-inner .img-box .details-box  .details-box-inner .btn-case {
+        justify-content: center;
+    }
+
+
+    /* END stylish-news INDEX SIX */
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX EIGHT  */
+    .photography-business-index-eight .blog-2-col-inner .items  .items-inner .img-box .img-wrap img {
+
+    }
+    /* END PHOTOGRAPHY BUSINESS INDEX EIGHT  */
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX ELEVEN */
+
+    .photography-business-index-eleven .blog-2-col-inner .items{
+        width: 100%;
+    }
+
+    /* END PHOTOGRAPHY BUSINESS INDEX ELEVEN */
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX TWELVE */
+
+    .photography-business-index-twelve .blog-2-col-inner .items {
+        width: 100% !important;
+    }
+
+    /* END PHOTOGRAPHY BUSINESS INDEX TWELVE */
+
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX THIRTEEN */
+
+    .photography-business-index-thirteen .blog-2-col-inner .items {
+        width: 100%;
+    }
+
+    /* END PHOTOGRAPHY BUSINESS INDEX THIRTEEN */
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX FOURTEEN */
+
+    .photography-business-index-fourteen .blog-2-col-inner .items {
+        width: 100%;
+    }
+
+    /* END PHOTOGRAPHY BUSINESS INDEX FOURTEEN */
+
+    /* BEGIN PHOTOGRAPHY BUSINESS INDEX SIXTEEN */
+
+    .photography-business-index-sixteen .blog-2-col-inner .items{
+        width: 100%;
+    }
+
+    /* END PHOTOGRAPHY BUSINESS INDEX SIXTEEN */
+
+    /*  BEGIN PHOTOGRAPHY BUSINESS INDEX SEVENTEEN */
+
+    .photography-business-index-seventeen .blog-2-col-inner .items{
+        width: 100%;
+    }
+    /*  END PHOTOGRAPHY BUSINESS INDEX SEVENTEEN */
+
+    /* BEGIN MOBILE WOOCOMMERCE */
+    .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product{
+        float: none;
+        display: block;
+        width: 99%;
+        padding: 0px 0px 10px 0px;   
+    }
+
+    .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .button {
+        width: 49%;
+    }
+
+    .single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product {
+        margin: 20px 10px;
+    }
+
+    .single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .products .product .button {
+        width: 55%;
+    }
+
+    .single-product .photography-business-woocommerce .blog-2-col-inner .items .items-inner .img-box .product .summary .cart .button {
+        width: 57%;
+    }
+
+    /* END MOBILE WOOCOMMERCE  */
+    
+    .mobwid-100 { width: 100%; }
+    .mobwid-90 { width: 90%; }
+
+
+    .footer-4-col  .inner .footer .footer-inner{
+        margin-right: 0px;
+    }
+     
+     .footer-4-col .inner .footer .footer-inner .footer-items li {
+        width: 100%;
+     }
+
+
+    .footer-4-col .inner .footer .footer-inner .footer-items li .gallery .gallery-item .gallery-icon a img{
+        height: 125px;
+    }
+
+    .footer-4-col .inner .footer .footer-inner .footer-items .calendar_wrap table caption {
+        text-align: center;
+    }
+
+    .footer-4-col  .inner{
+        text-align: center;
+    } 
+    
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    .photography-business-show {
+        display: none;
+    }
+
+     .photography-business-diff {
+        display: none;
+    }
+
+
+    .photography-business-index-two .blog-2-col-inner .items  .items-inner .img-box .img-wrap img{
+        height: auto !important;
+    }
+
+}
+
+        
+/* END MOBILE SCREEN STYLE */
