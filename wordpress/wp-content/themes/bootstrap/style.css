@@ -9,3 +9,6 @@
 */
  
 @import url("../twentytwenty/style.css");
+
+#carouselExampleCaptions {height: 500px;}
+#site-header{color: mediumslateblue;}
